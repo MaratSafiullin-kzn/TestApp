@@ -17,7 +17,7 @@ namespace TestASPNetMVCwithAngulsrJS.Controllers
         }
 
         //GET: Messages
-        public ActionResult Get()
+        public ContentResult Get()
         {
             var messages = db.Messages.ToList();
 

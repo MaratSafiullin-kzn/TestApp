@@ -10,5 +10,6 @@
                     controller: 'messageCntrl',
                     templateUrl: '/ClientApp/Templates/messages.html'
                 })
+                .otherwise({ redirectTo: "/" });
         }]);
 })();
