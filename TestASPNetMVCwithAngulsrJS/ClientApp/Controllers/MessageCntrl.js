@@ -18,6 +18,8 @@
             };
 
             $scope.createMessage = function (message) {
+                if (message.Original == '') return;
+
                 dataServices.addMessage(message).then(function () {
                     getData();
                 });

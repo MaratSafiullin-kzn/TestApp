@@ -29,8 +29,9 @@ namespace TestASPNetMVCwithAngulsrJS.Controllers
         [HttpPost]
         public JsonResult Create([Bind(Include = "Original, Encrypted")] Message message)
         {
-            message.DateTime = DateTime.Now;
+            if (message.Original == "") return Json(null);
 
+            message.DateTime = DateTime.Now;
             db.Messages.Add(message);
             db.SaveChanges();
 
