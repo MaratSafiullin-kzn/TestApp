@@ -1,2 +1,2 @@
 # TestApp
-Тестовое задание
+Тестовое задание ASPNet MVC , AngularJS, EntityFramework, MSSQL
